@@ -1,0 +1,395 @@
+//@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+//@import url("https://fonts.googleapis.com/css?family=Miriam+Libre:400,700|Frank+Ruhl+Libre:500");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+
+.false-arguments {
+    position: relative;
+    width: 375px;
+    height: 1034px;
+    background-color: var(--variable-collection-red-500);
+  }
+  
+  .false-arguments .header-mobile {
+    position: absolute;
+    width: 375px;
+    height: 71px;
+    top: 0;
+    left: 0;
+  }
+  
+  .false-arguments .text-wrapper {
+    position: absolute;
+    height: 27px;
+    top: 19px;
+    left: 297px;
+    font-family: "AlfaBravo-Bold", Helvetica;
+    font-weight: 700;
+    color: var(--variable-collection-white-100);
+    font-size: 28px;
+    letter-spacing: -0.56px;
+    line-height: normal;
+    white-space: nowrap;
+    direction: rtl;
+  }
+  
+  .false-arguments .divider {
+    position: absolute;
+    width: 335px;
+    height: 1px;
+    top: 70px;
+    left: 20px;
+    background-color: var(--variable-collection-white-100);
+  }
+  
+  .false-arguments .div {
+    position: absolute;
+    top: 49px;
+    left: 264px;
+    font-family: "Miriam Libre", Helvetica;
+    font-weight: 400;
+    color: var(--variable-collection-white-100);
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 12px;
+    white-space: nowrap;
+    direction: rtl;
+  }
+  
+  .false-arguments .icons {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 23px;
+    left: 60px;
+  }
+  
+  .false-arguments .img {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 23px;
+    left: 24px;
+  }
+  
+  .false-arguments .footer-mobile {
+    position: absolute;
+    width: 375px;
+    height: 164px;
+    top: 870px;
+    left: 0;
+    background-color: #efefef;
+  }
+  
+  .false-arguments .text-wrapper-2 {
+    position: absolute;
+    top: 124px;
+    left: 126px;
+    font-family: "Miriam Libre", Helvetica;
+    font-weight: 400;
+    color: var(--variable-collection-gray-700);
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.28px;
+    line-height: normal;
+    direction: rtl;
+  }
+  
+  .false-arguments .p {
+    position: absolute;
+    top: 61px;
+    left: 78px;
+    font-family: "Miriam Libre", Helvetica;
+    font-weight: 400;
+    color: var(--variable-collection-gray-700);
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.28px;
+    line-height: normal;
+    direction: rtl;
+  }
+  
+  .false-arguments .image {
+    position: absolute;
+    width: 92px;
+    height: 21px;
+    top: 83px;
+    left: 141px;
+    object-fit: cover;
+  }
+  
+  .false-arguments .text-wrapper-3 {
+    position: absolute;
+    top: 19px;
+    left: 102px;
+    font-family: "Miriam Libre", Helvetica;
+    font-weight: 400;
+    color: var(--variable-collection-gray-700);
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.28px;
+    line-height: normal;
+    direction: rtl;
+  }
+  
+  .false-arguments .text-wrapper-4 {
+    position: absolute;
+    top: 98px;
+    left: 69px;
+    font-family: "AlfaBravo-Bold", Helvetica;
+    font-weight: 700;
+    color: var(--variable-collection-white-100);
+    font-size: 44px;
+    letter-spacing: 0;
+    line-height: 44px;
+    white-space: nowrap;
+    direction: rtl;
+  }
+  
+  .false-arguments .section {
+    position: absolute;
+    width: 296px;
+    height: 236px;
+    top: 187px;
+    left: 39px;
+  }
+  
+  .false-arguments .QOUTE {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 16px 0px 0px;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    border-right-width: 3px;
+    border-right-style: solid;
+    border-color: var(--variable-collection-white-100);
+  }
+  
+  .false-arguments .text-wrapper-5 {
+    position: relative;
+    width: 280px;
+    margin-top: -3px;
+    font-family: "Frank Ruhl Libre", Helvetica;
+    font-weight: 500;
+    color: var(--variable-collection-white-100);
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 22.4px;
+    direction: rtl;
+  }
+  
+  .false-arguments .div-2 {
+    position: absolute;
+    top: 168px;
+    left: 79px;
+    font-family: "AlfaBravo-Bold", Helvetica;
+    font-weight: 400;
+    color: var(--variable-collection-white-100);
+    font-size: 18px;
+    line-height: normal;
+    direction: rtl;
+  }
+  
+  .false-arguments .span {
+    font-weight: 700;
+    letter-spacing: 0.03px;
+  }
+  
+  .false-arguments .text-wrapper-6 {
+    font-family: "Miriam Libre", Helvetica;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.06px;
+  }
+  
+  .false-arguments .text-wrapper-7 {
+    font-family: "Miriam Libre", Helvetica;
+    font-size: 14px;
+    letter-spacing: 0.06px;
+  }
+  
+  .false-arguments .frame {
+    position: absolute;
+    width: 295px;
+    height: 318px;
+    top: 468px;
+    left: 40px;
+  }
+  
+  .false-arguments .button-small {
+    display: flex;
+    width: 111px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 184px;
+    background-color: var(--variable-collection-red-500);
+    border-radius: 8px;
+    border: 2px solid;
+    border-color: var(--variable-collection-white-100);
+    box-shadow: var(--drop-shadow-500);
+  }
+  
+  .false-arguments .text-wrapper-8 {
+    position: relative;
+    width: fit-content;
+    margin-top: -2px;
+    font-family: "AlfaBravo-Bold", Helvetica;
+    font-weight: 700;
+    color: var(--variable-collection-white-100);
+    font-size: 18px;
+    letter-spacing: 0.36px;
+    line-height: normal;
+    white-space: nowrap;
+    direction: rtl;
+  }
+  
+  .false-arguments .arguments {
+    display: flex;
+    flex-direction: column;
+    width: 295px;
+    align-items: flex-end;
+    gap: 16px;
+    position: absolute;
+    top: 82px;
+    left: 0;
+  }
+  
+  .false-arguments .div-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 4px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: #ffffff;
+    box-shadow: var(--hard-shadow);
+  }
+  
+  .false-arguments .text-wrapper-9 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--h2-font-family);
+    font-weight: var(--h2-font-weight);
+    color: var(--variable-collection-red-500);
+    font-size: var(--h2-font-size);
+    letter-spacing: var(--h2-letter-spacing);
+    line-height: var(--h2-line-height);
+    text-decoration: underline;
+    white-space: nowrap;
+    direction: rtl;
+    font-style: var(--h2-font-style);
+  }
+  
+  .false-arguments .frame-2 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 4px;
+    position: relative;
+    flex: 0 0 auto;
+    margin-left: -8px;
+    background-color: #ffffff;
+    box-shadow: var(--hard-shadow);
+  }
+  
+  .false-arguments .text-wrapper-10 {
+    position: relative;
+    width: 295px;
+    margin-top: -1px;
+    font-family: var(--h2-font-family);
+    font-weight: var(--h2-font-weight);
+    color: var(--variable-collection-red-500);
+    font-size: var(--h2-font-size);
+    letter-spacing: var(--h2-letter-spacing);
+    line-height: var(--h2-line-height);
+    text-decoration: underline;
+    direction: rtl;
+    font-style: var(--h2-font-style);
+  }
+  
+  .false-arguments .frame-3 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 4px;
+    position: relative;
+    flex: 0 0 auto;
+    margin-left: -8px;
+    background-color: #ffffff;
+    box-shadow: var(--hard-shadow);
+  }
+
+  :root {
+    --h2-font-family: "AlfaBravo", Helvetica;
+    --h2-font-weight: 700;
+    --h2-font-size: 22px;
+    --h2-letter-spacing: 0px;
+    --h2-line-height: 120.00000476837158%;
+    --h2-font-style: normal;
+    --dictionary-link-font-family: "Miriam Libre", Helvetica;
+    --dictionary-link-font-weight: 400;
+    --dictionary-link-font-size: 20px;
+    --dictionary-link-letter-spacing: 0px;
+    --dictionary-link-line-height: normal;
+    --dictionary-link-font-style: normal;
+    --sub-title-font-family: "AlfaBravo", Helvetica;
+    --sub-title-font-weight: 700;
+    --sub-title-font-size: 22px;
+    --sub-title-letter-spacing: 0px;
+    --sub-title-line-height: 120.00000476837158%;
+    --sub-title-font-style: normal;
+    --credit-font-family: "Miriam Libre", Helvetica;
+    --credit-font-weight: 400;
+    --credit-font-size: 14px;
+    --credit-letter-spacing: 0.42px;
+    --credit-line-height: normal;
+    --credit-font-style: normal;
+    --text-regular-font-family: "Miriam Libre", Helvetica;
+    --text-regular-font-weight: 400;
+    --text-regular-font-size: 17px;
+    --text-regular-letter-spacing: 0.17px;
+    --text-regular-line-height: 135.0000023841858%;
+    --text-regular-font-style: normal;
+    --text-bold-font-family: "Miriam Libre", Helvetica;
+    --text-bold-font-weight: 700;
+    --text-bold-font-size: 17px;
+    --text-bold-letter-spacing: 0.17px;
+    --text-bold-line-height: 135.0000023841858%;
+    --text-bold-font-style: normal;
+    --hard-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 1);
+    --drop-shadow-500: 0px 4px 4px -4px rgba(12, 12, 13, 0.05), 0px 16px 16px -8px rgba(12, 12, 13, 0.1);
+    --variable-collection-white-100: rgba(255, 255, 252, 1);
+    --variable-collection-gray-700: rgba(56, 56, 56, 1);
+    --variable-collection-gray-500: rgba(112, 112, 112, 1);
+    --variable-collection-gray-300: rgba(209, 209, 209, 1);
+    --variable-collection-red-500: rgba(164, 17, 17, 1);
+    --variable-collection-blue-700: rgba(12, 67, 116, 1);
+    --variable-collection-blue-500: rgba(17, 95, 164, 1);
+    --variable-collection-red-700: rgba(116, 12, 12, 1);
+  }
+  

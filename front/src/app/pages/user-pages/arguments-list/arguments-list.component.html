@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html dir="rtl">
+  <body>
+    <app-topper></app-topper>
+    <div *ngIf="!isMobile" [ngStyle]="{'min-height': minimumHeight}">
+      <div class="desktop-main-wrapper" [ngStyle]="{'background-color': backgroundColor}">
+        <div class="desktop-right-sidebar-wrapper">
+        </div>
+        <div class="desktop-main-div-wrapper">
+          <p class="desktop-headline" [ngStyle]="{'color': titleColor}">{{headline}}</p>
+          <div *ngIf="isFalse">
+            <div class="quote-decoration" [ngStyle]="{'border-color': quoteDecorationColor}">
+              <p class="quote" [ngStyle]="{'color': textColor}">
+                ״קבלה ללא ערעור של המיתוסים הללו משרתת את כל מי שמבקש לשמר את גחלת הסכסוך כדי לסכל תהליך של הסדר-קבע –
+                תהליך שעשוי להוביל לשלום ולפיוס בין העמים. במילים אחרות, ההתעקשות להיצמד למיתוסים היא מתכון להנצחה של הסכסוך
+                ולסיכול כל אפשרות לפתרונו.״
+              </p>
+            </div>
+            <p class="quote-source" [ngStyle]="{'color': textColor}">ד״ר שאול אריאלי</p>
+            <p class="quote-source-description" [ngStyle]="{'color': textColor}">
+              אלוף-משנה במיל׳ מומחה לסכסוך הישראלי-פלסטיני, מתוך ספרו ״ככה בדיוק קרה?״  
+            </p>
+          </div>
+          <div class="argument-wrapper" *ngFor="let argument of arguments" [ngStyle]="{'background-color': argumentBackgroundColor}">
+            <a class="argument" [routerLink]="['../','arguments',argument._id]" 
+            [ngStyle]="{'color': argumentColor}">״{{argument.title}}״</a>
+          </div>
+          <div class="desktop-action-buttons-wrapper">
+            <a class="desktop-action-button" routerLink="/new" 
+            [ngStyle]="{'color': actionButtonColor, 'border': actionButtonBorder}">הוספת טיעון</a>
+          </div>
+        </div>
+        <div class="desktop-left-sidebar-wrapper">
+        </div>
+      </div>
+    </div>
+    <div *ngIf="isMobile" [ngStyle]="{'background-color': backgroundColor}">
+      <div class="mobile-main-wrapper">
+        <p class="mobile-argument-title" [ngStyle]="{'color': titleColor}">{{headline}}</p>
+        
+
+        <div class="quote-decoration" [ngStyle]="{'border-color': quoteDecorationColor}">
+          <p class="mobile-quote" [ngStyle]="{'color': textColor}">
+            ״קבלה ללא ערעור של המיתוסים הללו משרתת את כל מי שמבקש לשמר את גחלת הסכסוך כדי לסכל תהליך של הסדר-קבע –
+            תהליך שעשוי להוביל לשלום ולפיוס בין העמים. במילים אחרות, ההתעקשות להיצמד למיתוסים היא מתכון להנצחה של הסכסוך
+            ולסיכול כל אפשרות לפתרונו.״
+          </p>
+        </div>
+        <p class="quote-source" [ngStyle]="{'color': textColor}">ד״ר שאול אריאלי</p>
+        <p class="quote-source-description mobile-quote-source-description" [ngStyle]="{'color': textColor}">
+          אלוף-משנה במיל׳ מומחה לסכסוך הישראלי-פלסטיני, מתוך ספרו ״ככה בדיוק קרה?״  
+        </p>
+        <div class="argument-wrapper" *ngFor="let argument of arguments" [ngStyle]="{'background-color': argumentBackgroundColor}">
+          <a class="argument" [routerLink]="['../','arguments',argument._id]" 
+          [ngStyle]="{'color': argumentColor}">״{{argument.title}}״</a>
+        </div>
+        <div class="desktop-action-buttons-wrapper">
+          <a class="desktop-action-button mobile-action-button" routerLink="/new" 
+          [ngStyle]="{'color': actionButtonColor, 'border': actionButtonBorder}">הוספת טיעון</a>
+        </div>
+      </div>
+    </div>
+    <app-footer></app-footer>
+  </body>
+</html>

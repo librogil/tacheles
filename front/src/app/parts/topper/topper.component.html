@@ -1,0 +1,47 @@
+<div *ngIf="!isMobile">
+  <div class="desktop-topper-main-wrapper" id="topper-height" [ngStyle]="{'background-color': backgroundColor}">
+    <div class="desktop-topper-secondary-wrapper">
+      <div class="desktop-topper-rightside-wrapper">
+        <a class="logo-title" routerLink="/" [ngStyle]="{'color': logoTitleColor}">תכלס</a>
+        <p class="logo-subtitle" [ngStyle]="{'color': logoSubtitleColor}">מדריך כיס לסכסוך</p>
+      </div>
+      <div class="desktop-topper-center-wrapper">
+        <div class="desktop-topper-links-wrapper">
+          <a class="topper-link" routerLink="/about" [ngStyle]="{'color': topperLinkColor}">אודות</a>     
+          <a class="topper-link" routerLink="/arguments" [ngStyle]="{'color': topperLinkColor}">טיעונים</a>     
+        </div>
+        <div class="desktop-topper-argument-type-links-wrapper">
+          <a class="topper-link-argument-type" id="false" routerLink="/false-arguments" 
+          [ngStyle]="{'color': topperLinkColor}" (click)="setType('false')">שקריים</a>    
+          <p class="topper-link-argument-type-divider" [ngStyle]="{'color': topperLinkColor}">|</p>
+          <a class="topper-link-argument-type" id="true" routerLink="/true-arguments" 
+          [ngStyle]="{'color': topperLinkColor}" (click)="setType('true')">אמיתיים</a>    
+          <p class="topper-link-argument-type-divider" [ngStyle]="{'color': topperLinkColor}">|</p>
+          <a class="topper-link-argument-type" id="irrefutable" routerLink="/irrefutable-arguments" 
+          [ngStyle]="{'color': topperLinkColor}" (click)="setType('irrefutable')">בנ״לים</a>    
+        </div>
+        <div class="desktop-topper-links-wrapper">
+          <a class="topper-link" routerLink="/dictionary" [ngStyle]="{'color': topperLinkColor}">מילון</a>     
+          <a class="topper-link" routerLink="/background" [ngStyle]="{'color': topperLinkColor}">רקע</a>
+          <a class="topper-link" routerLink="/today" [ngStyle]="{'color': topperLinkColor}">ומה היום?</a>  
+        </div>
+      </div>
+      <div class="desktop-topper-leftside-wrapper">
+        <div class="search-input-wrapper">
+          <input id="search-input-id" class="search" type="text" [(ngModel)]="searchInput" 
+          (keyup)="search()" maxlength="25" [ngStyle]="inputStyle()">
+        </div>
+      </div>
+    </div>
+    <div class="desktop-topper-divider" [ngStyle]="{'background-color': desktopTopperDivider}"></div>
+  </div>
+</div>
+<div *ngIf="isMobile" [ngStyle]="{'background-color': backgroundColor}" class="xxx">
+  <div class="mobile-wrapper">
+    <a class="logo-title" routerLink="/" [ngStyle]="{'color': logoTitleColor}">תכלס</a>
+    <p class="mobile-subtitle" [ngStyle]="{'color': logoSubtitleColor}">מדריך כיס לסכסוך</p>
+    <img class="mobile-search-icon" src="{{searchIconColor}}" />
+    <img class="mobile-hamburger-icon" src="{{menuIconColor}}" />
+  </div>
+  <div class="mobile-divider" [ngStyle]="{'background-color': desktopTopperDivider}"></div>
+</div>

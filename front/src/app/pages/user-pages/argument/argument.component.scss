@@ -1,0 +1,75 @@
+// MOBILE & DESKTOP
+
+.read-more, .mobile-read-more {
+  margin: auto;
+  margin-right: 0px;
+}
+
+.desktop-short-answer {
+  font-family: "Miriam Libre", Helvetica;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 0px;
+}
+
+.copy-text {
+  line-height: 19px;
+}
+
+.desktop-read-copy-wrapper {
+  display: flex; 
+  margin-bottom: 20px;
+}
+
+// MOBILE >>>
+   
+.mobile-argument-title {
+  padding-top: 20px;
+}
+
+.mobile-short-answer {
+  font-family: "Miriam Libre", Helvetica;
+  color: white;
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
+
+.mobile-read-copy-wrapper {
+  display:flex; 
+  margin-bottom: 30px;
+}
+
+.mobile-read-more {
+  color: white;
+  font-family: "Miriam Libre", Helvetica;
+  text-decoration: underline;
+  font-weight: lighter;
+  font-size: 15px;
+}
+
+.mobile-read-copy-wrapper {
+  display:flex; 
+}
+
+.copy-secondary-wrapper {
+  display: inline-flex;
+  gap: 4px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid;
+}
+
+// MOBILE <<<
+
+
+.desktop-answer-subtitle {
+  font-family: Alfa;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+a:hover {
+  cursor: pointer;
+}

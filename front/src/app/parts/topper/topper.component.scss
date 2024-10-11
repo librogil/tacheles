@@ -1,0 +1,202 @@
+// DESKTOP >>>
+
+// DESKTOP-GENERAL
+
+.desktop-topper-main-wrapper {
+  width: 1280px;
+  margin: auto;
+  padding-bottom: 40px;;
+}
+
+.desktop-topper-secondary-wrapper {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.desktop-topper-rightside-wrapper {
+  margin-right: 40px;
+  margin-top: 10px;
+}
+
+.desktop-topper-leftside-wrapper {
+  margin-left: 40px;
+  margin-top: 2px;
+  text-align: left;
+}
+
+.desktop-topper-rightside-wrapper {
+  max-width: 165px;
+  min-width: 165px;
+}
+
+a:hover.topper-link {
+  text-decoration: none;
+}
+
+a:hover#false, a:hover#true, a:hover#irrefutable {
+  text-decoration: underline;
+}
+
+a:hover#false {
+  color: var(--red);
+}
+
+a:hover#true {
+  color: var(--blue);
+}
+
+a:hover#irrefutable {
+  color: var(--gray);
+}
+
+.desktop-topper-divider {
+  width: 1240px;
+  margin: auto;
+  height: 1px;
+  background-color: var(--dark-gray);
+}
+
+// DESKTOP-RIGHTSIDE
+
+.logo-title {
+  font-family: Alfa;
+  color: black;
+  font-size: 32px;
+}
+      
+.logo-subtitle {
+  font-family: "Miriam Libre", Helvetica;
+  color: rgb(130, 130, 130);
+  font-size: 14px;
+}
+
+// DESKTOP-CENTER
+
+.desktop-topper-center-wrapper {
+  width: 1000px;
+  padding: 10px 0px 0px 20px;
+}
+
+.desktop-topper-links-wrapper {
+  display: inline-flex;
+  gap: 30px;
+}
+
+.desktop-topper-argument-type-links-wrapper {
+  display: inline-flex;
+  gap: 5px;
+  margin-left: 30px;
+  margin-right: 10px;
+}
+      
+.topper-link {
+  margin-top: 10px;
+  font-family: "Frank Ruhl Libre", Helvetica;
+  color: #383838;
+  font-size: 24px;
+  text-decoration: underline;      
+}
+
+.topper-link-argument-type {
+  margin-top: 10px;
+  font-family: "Frank Ruhl Libre", Helvetica;
+  color: #383838;
+  font-size: 16px;
+  gap: 10px;    
+}
+
+.topper-link-argument-type-divider {
+  margin-top: 10px;
+  color: #383838;
+  cursor: default; 
+}
+
+// DESKTOP-LEFTSIDE
+
+.search {
+  margin-top: 12px;
+  padding: 8px 40px;
+  border-radius: 12px;
+  border: 1px solid var(--variable-collection-gray-300);    
+  background: url(./../../../assets/search-black.svg);   
+  background-position: 230px 9px; 
+  background-repeat: no-repeat;
+  font-size: 16px;
+}
+
+input {
+  font-family: "Miriam Libre", Helvetica;
+  outline: none;
+  width: 180px;
+}
+
+// DESKTOP <<<
+
+// MOBILE >>>
+
+.mobile-search-icon {
+
+  left: 56px;
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  top: 20px;
+  //margin-top: 0px;  
+}
+  
+.mobile-hamburger-icon {
+  left: 20px;
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  top: 20px;
+}
+
+
+.mobile-wrapper {
+  margin: auto;
+  //width: 86%;
+  margin-bottom: 10px;
+  width: calc(100% - 40px);
+
+ // margin-bottom: 5px;
+}
+.mobile-wrapper {
+  //margin: auto;
+  //width: 86%;
+
+}
+.xxx {
+  //margin-top: 100px;
+  padding-top: 10px;
+}
+
+.mobile-search-icon {
+  margin: auto;
+  //left: 16%;
+  //position: absolute;
+  //width: 24px;
+  //height: 24px;
+  //top: 10px;  
+}
+
+.mobile-divider {
+  margin: auto;
+  width: calc(100% - 40px);
+  //width: 86%;
+  height: 1px;
+  background-color: #383838;
+}
+
+.mobile-title {
+  padding-top: 10px;
+  font-family: Alfa;
+  color: #000000;
+  font-size: 24px;
+}
+
+.mobile-subtitle {
+  font-family: "Miriam Libre", Helvetica;
+  color: #828282;
+  font-size: 12px;
+}

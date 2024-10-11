@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html dir="rtl">
+  <body>
+    <app-topper [type]="type"></app-topper>
+    <div class="desktop-main-wrapper" *ngIf="!isMobile" [ngStyle]="{'background-color': backgroundColor, 'min-height': minimumHeight}">
+      <div class="desktop-right-sidebar-wrapper">
+      </div>
+      <div class="desktop-main-div-wrapper">
+        <p class="desktop-argument-title" [ngStyle]="{'color': argumentTitleColor}">"{{ argument.title }}"</p>
+        <div class="short-answer-wrapper" *ngFor="let answer of answers; index as i">
+          <p class="desktop-short-answer" [ngStyle]="{'color': textColor}">{{ answer.short }}</p>
+          <div class="desktop-read-copy-wrapper">
+            <a class="desktop-read-more" [ngStyle]="{'color': textColor}" [routerLink]="[answer._id]">קראו עוד ←</a>
+            <div class="copy-wrapper" [ngStyle]="{'border': border}" (click)="copy(i)">
+              <div class="copy-text" [ngStyle]="{'color': textColor}">העתק</div>
+              <img class="copy-icon" src="{{copyIconSource}}" />
+            </div>
+          </div>
+        </div>
+        <a class="desktop-answer-subtitle desktop-answer-link" [ngStyle]="{'color': textColor}" (click)="back()">
+          → חזרה לרשימת הטיעונים</a>
+        <hr class="solid" [ngStyle]="{'border-top': dividerBorder}">
+        <div class="desktop-action-buttons-wrapper">
+          <a class="desktop-action-button" routerLink="/new"
+          [ngStyle]="{'color': actionButtonColor, 'border': actionButtonBorder}">הוספת טיעון</a>
+          <a class="desktop-action-button" [routerLink]="['../../', 'new', argument._id]"
+          [ngStyle]="{'color': actionButtonColor, 'border': actionButtonBorder}">הוספת תשובה</a>
+        </div>
+      </div>
+      <div class="desktop-left-sidebar-wrapper">
+      </div>
+    </div>
+
+
+
+
+
+    <div *ngIf="isMobile" [ngStyle]="{'background-color': backgroundColor}">
+      <div class="mobile-main-wrapper">
+
+
+
+        
+        <div class="mobile-argument-title" [ngStyle]="{'color': argumentTitleColor}">"{{ argument.title }}"</div>
+
+        <div class="short-answer-wrapper" *ngFor="let answer of answers; index as i">
+          <p class="mobile-short-answer" [ngStyle]="{'color': textColor}">{{ answer.short }}</p>
+          <div class="mobile-read-copy-wrapper">
+            <p class="mobile-read-more" [ngStyle]="{'color': textColor}" [routerLink]="[answer._id]">קראו עוד ←</p>
+            <div class="copy-secondary-wrapper" [ngStyle]="{'border': border}">
+              <div class="copy-text" [ngStyle]="{'color': textColor}">העתק</div>
+              <img class="copy-icon" src="{{copyIconSource}}" />      
+            </div>
+          </div>
+
+          <!--<div class="desktop-read-copy-wrapper">
+            <a class="desktop-read-more" [ngStyle]="{'color': textColor}" [routerLink]="[answer._id]">קראו עוד ←</a>
+            <div class="copy-wrapper" [ngStyle]="{'border': border}" (click)="copy(i)">
+              <div class="copy-text" [ngStyle]="{'color': textColor}">העתק</div>
+              <img class="copy-icon" src="{{copyIconSource}}" />
+            </div>
+          </div>-->
+        </div>
+        <hr class="solid" [ngStyle]="{'border-top': dividerBorder}">
+        
+        <a class="desktop-action-button mobile-action-button" routerLink="/new"
+        [ngStyle]="{'color': actionButtonColor, 'border': actionButtonBorder}">הוספת טיעון</a>
+        <br>
+        <a class="desktop-action-button" [routerLink]="['../../', 'new', argument._id]"
+        [ngStyle]="{'color': actionButtonColor, 'border': actionButtonBorder}">הוספת תשובה</a>
+
+
+
+      </div>
+    </div>
+    <app-footer></app-footer>
+  </body>
+</html>

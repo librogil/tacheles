@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html dir="rtl">
+  <body>
+    <app-topper></app-topper>
+    <div *ngIf="!isMobile">
+      <div class="desktop-main-wrapper" [ngStyle]="{'min-height': minimumHeight}">
+        <div class="desktop-right-sidebar-wrapper">
+        </div>
+      <div class="desktop-main-div-wrapper">
+        <p class="desktop-headline">ומה היום?</p>
+      </div>
+      <div class="desktop-left-sidebar-wrapper">
+      </div>
+       </div>
+    </div>
+    <div *ngIf="isMobile">
+      <div class="mobile-headline-first-line">
+        <p>למי שרוצה לעשות סדר בבלגן שנקרא</p>
+      </div>
+      <div class="mobile-headline-second-line">
+        <p>הסכסוך הישראלי-פלסטיני</p>
+      </div>
+      <div class="mobile-category-wrapper" id="first-category">
+        <div class="mobile-category-text-wrapper">
+          <p class="mobile-category-text-headline">להכיר את מושגי היסוד</p>
+          <p class="mobile-category-text-examples">מה זה שטח C? מה זו החלטה 242?</p>
+        </div>
+        <div class="mobile-category-link">למילון ←</div>
+      </div>        
+      <div class="mobile-category-wrapper" id="second-category">
+        <div class="mobile-category-text-wrapper">
+          <p class="mobile-category-text-headline">לחשוף את השקרים מאחורי</p>
+          <p class="mobile-category-text-headline">המיתוסים של הסכסוך</p>
+          <p class="mobile-category-text-examples">האם באמת אין פרטנר? <br />האם באמת ברק הציע הכל?</p>
+        </div>
+        <div class="mobile-category-link">לטיעונים ←</div>
+      </div>
+      <div class="mobile-category-wrapper" id="third-category">
+        <div class="mobile-category-text-wrapper">
+          <p class="mobile-category-text-headline">להבין איפה אנחנו היום</p>
+          <p class="mobile-category-text-examples">כמה אנחנו רחוקים מהסכם, <br>ומה (או מי) מונע מהסכם להתממש?</p>
+        </div>
+        <div class="mobile-category-link">לקיצור תולדות הסכסוך ←</div>
+      </div>
+    </div>
+  <app-footer></app-footer>
+  </body>
+</html>

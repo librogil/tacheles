@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html dir="rtl">
+  <body>
+    <app-topper [type]="type"></app-topper>
+    <div class="desktop-main-wrapper" *ngIf="!isMobile" [ngStyle]="{'background-color': backgroundColor, 'min-height': minimumHeight}">
+      <div class="desktop-right-sidebar-wrapper">
+      </div>
+      <div class="desktop-main-div-wrapper">
+        <p class="answer-title" [ngStyle]="{'color': grayWhite}">"{{ argument.title }}"</p>
+        <p class="answer-full" [innerHTML]="argument.answers[index].full" [ngStyle]="{'color': blackWhite}"></p>
+        <div class="desktop-sources-wrapper"> 
+          <p class="desktop-answer-subtitle" [ngStyle]="{'color': grayWhite}">מקורות</p>  
+          <div *ngFor="let source of sources; index as i">
+            <div *ngIf="isBook[i]">
+              <div class="desktop-source-wrapper">
+                <div class="copy-wrapperrr">
+                  <img class="copy-icon" src="{{bookIcon}}" />
+                </div>
+                <p class="desktop-textual-source" [ngStyle]="{'color': blackWhite}">{{ source.description }}</p>  
+              </div>
+            </div>
+            <div *ngIf="!isBook[i]">
+              <div class="desktop-source-wrapper">
+                <div class="copy-wrapperrr">
+                  <img class="copy-icon" src="{{linkIcon}}" />
+                </div>
+                <a class="mobile-read-more" target="_blank" href="{{source.url}}"
+                [ngStyle]="{'color': blackWhite}">{{ source.description }}</a>     
+              </div>
+            </div>
+            <!--
+
+          
+          
+          </div>
+
+          <p>{{ argument.answers[0].sources[0].description }}</p>
+  -->
+          </div>
+          <!--
+          <div class="desktop-source-wrapper">
+            <div class="copy-wrapperrr">
+              <img class="copy-icon" src="{{linkIcon}}" />
+            </div>
+            <a class="mobile-read-more" target="_blank" href="https://en.wikipedia.org/wiki/Israeli%E2%80%93Palestinian_conflict"
+            [ngStyle]="{'color': blackWhite}">לינק כלשהו</a>            
+          </div>
+
+
+          <div class="desktop-source-wrapper">
+            <div class="copy-wrapperrr">
+              <img class="copy-icon" src="{{linkIcon}}" />
+            </div>
+            <a class="mobile-read-more" target="_blank" href="https://en.wikipedia.org/wiki/Israeli%E2%80%93Palestinian_conflict"
+            [ngStyle]="{'color': blackWhite}">לינק כלשהו</a>            
+          </div>
+          </div>
+        -->
+        </div>
+          <a class="desktop-answer-subtitle desktop-answer-link" [ngStyle]="{'color': grayWhite}" 
+          [routerLink]="['../../../','arguments',argument._id]">→ חזרה לרשימת התשובות</a>
+          <hr class="solid" [ngStyle]="{'border-top': dividerBorder}">
+          <div class="desktop-action-buttons-wrapper">
+            <a class="desktop-action-button" routerLink="/new"
+            [ngStyle]="{'color': grayWhite, 'border': actionButtonBorder}">הוספת טיעון</a>
+            <a class="desktop-action-button" [routerLink]="['../../../', 'new', argument._id]"
+            [ngStyle]="{'color': grayWhite, 'border': actionButtonBorder}">הוספת תשובה</a>
+            <a class="desktop-action-button" [routerLink]="['../../../', 'edit', argument._id, answerID]"
+            [ngStyle]="{'color': grayWhite, 'border': actionButtonBorder}">עריכת תשובה</a>
+          </div>
+      </div>
+      <div class="desktop-left-sidebar-wrapper">
+      </div>
+    </div>
+    <!--
+    <div class="wrapper-mobile" *ngIf="isMobile">
+      <div class="main-div-mobile">
+        <div class="answer-box-mobile">
+          <p class="answer-title">"{{ argument.title }}"</p>
+          <p class="answer-full-mobile"> {{argument.answers[index].full}}</p>
+        </div>
+      </div>
+    </div>
+  -->
+  <div *ngIf="isMobile" [ngStyle]="{'background-color': backgroundColor}">
+    <div class="mobile-main-wrapper">
+
+
+
+      
+      <div class="mobile-argument-title" [ngStyle]="{'color': grayWhite}">"{{ argument.title }}"</div>
+
+      <p class="mobile-answer-full" [ngStyle]="{'color': blackWhite}">{{ answer.full }}</p>
+
+      <div class="desktop-sources-wrapper"> 
+        <p class="desktop-answer-subtitle" [ngStyle]="{'color': grayWhite}">מקורות</p>  
+        <div *ngFor="let source of sources; index as i">
+          <div *ngIf="isBook[i]">
+            <div class="desktop-source-wrapper">
+              <div class="copy-wrapperrr">
+                <img class="copy-icon" src="{{bookIcon}}" />
+              </div>
+              <p class="desktop-textual-source" [ngStyle]="{'color': blackWhite}">{{ source.description }}</p>  
+            </div>
+          </div>
+          <div *ngIf="!isBook[i]">
+            <div class="desktop-source-wrapper">
+              <div class="copy-wrapperrr">
+                <img class="copy-icon" src="{{linkIcon}}" />
+              </div>
+              <a class="mobile-read-more" target="_blank" href="{{source.url}}"
+              [ngStyle]="{'color': blackWhite}">{{ source.description }}</a>     
+            </div>
+          </div>
+          <!--
+
+        
+        
+        </div>
+
+        <p>{{ argument.answers[0].sources[0].description }}</p>
+-->
+        </div>
+        <!--
+        <div class="desktop-source-wrapper">
+          <div class="copy-wrapperrr">
+            <img class="copy-icon" src="{{linkIcon}}" />
+          </div>
+          <a class="mobile-read-more" target="_blank" href="https://en.wikipedia.org/wiki/Israeli%E2%80%93Palestinian_conflict"
+          [ngStyle]="{'color': blackWhite}">לינק כלשהו</a>            
+        </div>
+
+
+        <div class="desktop-source-wrapper">
+          <div class="copy-wrapperrr">
+            <img class="copy-icon" src="{{linkIcon}}" />
+          </div>
+          <a class="mobile-read-more" target="_blank" href="https://en.wikipedia.org/wiki/Israeli%E2%80%93Palestinian_conflict"
+          [ngStyle]="{'color': blackWhite}">לינק כלשהו</a>            
+        </div>
+        </div>
+      -->
+      </div>
+
+
+      <hr class="solid" [ngStyle]="{'border-top': dividerBorder}">
+      
+      <a class="desktop-action-button mobile-action-button" routerLink="/new"
+      [ngStyle]="{'color': grayWhite, 'border': actionButtonBorder}">הוספת טיעון</a>
+      <br>
+      <a class="desktop-action-button" [routerLink]="['../../', 'new', argument._id]"
+      [ngStyle]="{'color': grayWhite, 'border': actionButtonBorder}">הוספת תשובה</a>
+
+
+
+    </div>
+  </div>
+    <app-footer></app-footer>
+  </body>  
+</html>

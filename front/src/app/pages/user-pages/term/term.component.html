@@ -1,0 +1,51 @@
+<!--<!DOCTYPE html>
+<html dir="rtl">
+  <body>
+    <app-topper></app-topper>
+    <div class="wrapper" *ngIf="!isMobile">
+      <div class="right-sidebar">
+      </div>
+      <div class="main-div">
+        <div class="answer-box">
+          <p class="answer-title">{{ term.title }}</p>
+          <p class="answer-full">{{ term.definition }}</p>
+        </div>
+      </div>
+      <div class="left-sidebar">
+      </div>
+    </div>
+    <div class="wrapper-mobile" *ngIf="isMobile">
+      <div class="main-div-mobile">
+      </div>
+    </div>
+  </body>  
+</html>
+-->
+
+<!DOCTYPE html>
+<html dir="rtl">
+  <body>
+    <app-topper [type]="type"></app-topper>
+    <div class="desktop-main-wrapper" *ngIf="!isMobile" [ngStyle]="{'background-color': backgroundColor, 'min-height': minimumHeight}">
+      <div class="desktop-right-sidebar-wrapper">
+      </div>
+      <div class="desktop-main-div-wrapper">
+          <div class="answeffr-box">
+            <p class="answer-title">"{{ term.title }}"</p>
+            <p class="answer-full">{{ term.definition }}</p>
+          </div>
+      </div>
+      <div class="desktop-left-sidebar-wrapper">
+      </div>
+    </div>
+    <div class="wrapper-mobile" *ngIf="isMobile">
+      <div class="main-div-mobile">
+        <div class="answer-box-mobile">
+          <p class="answer-title">"{{ term.title }}"</p>
+          <p class="answer-full-mobile"></p>
+        </div>
+      </div>
+    </div>
+    <app-footer></app-footer>
+  </body>  
+</html>

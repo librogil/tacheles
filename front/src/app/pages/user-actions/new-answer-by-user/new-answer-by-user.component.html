@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html dir="rtl">
+  <body>
+    <app-topper></app-topper>
+
+
+
+    <div *ngIf="!isMobile">
+      <div class="desktop-main-wrapper">
+        <div class="desktop-right-sidebar-wrapper">
+        </div>
+      <div class="desktop-main-div-wrapper">
+        <p class="desktop-headline" id="form-headline">הוספת תשובה</p>
+        <p class="desktop-form-explanation-text">
+          • התוכן ייבדק ויתווסף לאתר רק אם יימצא מתאים
+        <br>
+          • יש למלא את כל השדות
+        </p>
+        <p class="desktop-input-text">כותרת</p>
+
+<input class="desktop-form-input" [(ngModel)]="argument.title" #titleInput disabled>
+        <p class="desktop-input-text">תשובה קצרה (עד 200 תווים)</p>
+        <textarea class="desktop-form-input" id="desktop-short-input" [(ngModel)]="shortInputCheck" #shortInput></textarea>
+        <p class="desktop-input-text">תשובה מלאה</p>
+        <textarea class="desktop-form-input" id="desktop-full-input" [(ngModel)]="fullInputCheck" #fullInput></textarea>
+        <p class="desktop-input-text">מייל</p>
+        <input class="desktop-form-input" [(ngModel)]="emailInputCheck" #emailInput>
+        
+        <button class="desktop-submit-button"
+        (click)="submitNewAnswer(shortInput.value, fullInput.value, emailInput.value)">שליחה</button>
+     
+
+
+      </div>
+      <div class="desktop-left-sidebar-wrapper">
+      </div>
+       </div>
+    </div>
+
+
+
+
+
+
+<!--
+
+
+    
+    <div class="wrapper">    
+      <div class="right-sidebar">
+        <button class="add-or-edit-button" (click)="submitNewArgument(titleInput.value, shortInput.value, fullInput.value)">שליחה</button>  
+      </div>
+      <div class="main-div">
+        <input class="new-title" type="text" [(ngModel)]="titleInputCheck" #titleInput placeholder="כותרת" 
+        onfocus="this.placeholder = ''" onblur="this.placeholder = 'כותרת'" (click)="hideErrorMessage()">
+        <textarea class="short" [(ngModel)]="shortInputCheck" #shortInput placeholder="תשובה קצרה (עד 200 תווים)" 
+        onfocus="this.placeholder = ''" onblur="this.placeholder = 'תשובה קצרה (עד 200 תווים)'" (click)="hideErrorMessage()"></textarea>
+        <textarea class="full" [(ngModel)]="fullInputCheck" #fullInput placeholder="תשובה מלאה" 
+        onfocus="this.placeholder = ''" onblur="this.placeholder = 'תשובה מלאה'" (click)="hideErrorMessage()"></textarea>
+        <div class="below-textarea">
+          <div class="error-messages">
+            <p id="error-message"></p>
+          </div>
+        </div>
+      </div>
+      <div class="left-sidebar">
+        <p></p>
+      </div>
+    </div>
+  -->
+  <app-footer></app-footer>
+  </body>
+</html>

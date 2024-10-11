@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html dir="rtl">
+  <body>
+    <app-topper></app-topper>
+    <div *ngIf="!isMobile">
+      <div class="desktop-main-wrapper">
+        <div class="desktop-right-sidebar-wrapper">
+        </div>
+        <div class="desktop-main-div-wrapper">
+          <p class="desktop-headline" id="form-headline">הוספת טיעון</p>
+          <p class="desktop-form-explanation-text">
+            • התוכן ייבדק ויתווסף לאתר רק אם יימצא מתאים
+          <br>
+            • יש למלא את כל השדות
+          </p>
+          <p class="desktop-input-text">כותרת</p>
+          <input class="desktop-form-input" [(ngModel)]="titleInputCheck" #titleInput>
+          <p class="desktop-input-text">תשובה קצרה (עד 200 תווים)</p>
+          <textarea class="desktop-form-input" id="desktop-short-input" [(ngModel)]="shortInputCheck" #shortInput></textarea>
+          <p class="desktop-input-text">תשובה מלאה</p>
+          <textarea class="desktop-form-input" id="desktop-full-input" [(ngModel)]="fullInputCheck" #fullInput></textarea>
+          <p class="desktop-input-text">מייל</p>
+          <input class="desktop-form-input" [(ngModel)]="emailInputCheck" #emailInput>
+          <button class="desktop-submit-button"
+          (click)="submitNewArgument(titleInput.value, shortInput.value, fullInput.value, emailInput.value)">שליחה</button>
+        </div>
+        <div class="desktop-left-sidebar-wrapper">
+        </div>
+      </div>
+    </div>
+    <div *ngIf="isMobile">
+      <div class="mobile-main-wrapper">
+        <p class="mobile-argument-title">טיעונים</p>
+          <p class="mobile-form-explanation-text">
+            • התוכן ייבדק ויתווסף לאתר רק אם יימצא מתאים
+          <br>
+            • יש למלא את כל השדות
+          </p>
+          <p class="desktop-input-text">כותרת</p>
+          <input class="mobile-form-input" [(ngModel)]="titleInputCheck" #titleInput>
+          <p class="desktop-input-text">תשובה קצרה (עד 200 תווים)</p>
+          <textarea class="mobile-form-input" id="desktop-short-input" [(ngModel)]="shortInputCheck" #shortInput></textarea>
+          <p class="desktop-input-text">תשובה מלאה</p>
+          <textarea class="mobile-form-input" id="desktop-full-input" [(ngModel)]="fullInputCheck" #fullInput></textarea>
+          <p class="desktop-input-text">מייל</p>
+          <input class="mobile-form-input" [(ngModel)]="emailInputCheck" #emailInput>
+          <button class="mobile-submit-button"
+          (click)="submitNewArgument(titleInput.value, shortInput.value, fullInput.value, emailInput.value)">שליחה</button>
+        </div>
+
+    </div>
+  <app-footer></app-footer>
+  </body>
+</html>

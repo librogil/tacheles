@@ -1,0 +1,195 @@
+// DESKTOP >>>
+
+.desktop-homepage-sidebar-wrapper {
+  max-width: 200px;
+  min-width: 200px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.desktop-homepage-main-div-wrapper {
+  margin: auto;
+  min-width: 880px;
+  max-width: 880px;
+}
+
+.desktop-homepage-headline-first-line, .desktop-homepage-headline-second-line {
+  font-family: Alfa;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.desktop-homepage-headline-first-line {
+  color: var(--dark-gray);
+  font-size: 60px;
+}
+
+.desktop-homepage-headline-second-line {
+  padding-bottom: 30px;
+  color: var(--blue);
+  font-size: 82px;
+}
+      
+.desktop-category-wrapper {
+  position: relative;
+  height: 400px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.desktop-category-text-wrapper {
+  padding: 20px;
+  position: absolute;
+  background-color: white;
+  opacity: 0.8;
+}
+
+.desktop-category-text-headline {
+  font-family: alfa;
+  color: black;
+  font-size: 46px;
+}
+
+.bottom-line {
+  margin-bottom: 10px;
+}
+
+.desktop-category-text-examples {
+  font-family: "Miriam Libre", Helvetica;
+  color: var(--gray);
+  font-size: 28px;
+  line-height: 34px;
+}
+
+.desktop-category-link {
+  background-color: var(--blue);
+  padding: 12px;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 20px;
+  right : 20px;
+  font-family: alfa;
+  color: var(--white-gray);
+  font-size: 34px;
+  text-decoration: underline;
+  white-space: nowrap;
+}
+
+#desktop-first-category {
+  background-image: url(../../../../assets/1-3.jpg);
+  background-size:cover;
+  //background-image: url(https://c.animaapp.com/KDqKWvYt/img/eddie-carolina-stigson-ecize6mduh8-unsplash-1.png);
+}
+
+#dictionary {
+  background-image: url(../../../../assets/2-1.jpg);
+  background-size:cover;
+}
+
+#desktop-third-category {
+  background-image: url(https://c.animaapp.com/KDqKWvYt/img/eddie-carolina-stigson-ecize6mduh8-unsplash-2-1.png);
+}
+
+#background {
+  background-image: url(../../../../assets/3-3.jpg);
+  background-size:cover;
+}
+
+#today {
+  background-image: url(../../../../assets/4-2.jpg);
+  background-size:cover;
+}
+
+#desktop-fourth-category {
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/803/192/871/john-martin-classic-art-painting-classical-art-the-last-judgment-hd-wallpaper-preview.jpg);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+// DESKTOP <<<
+
+// MOBILE >>>
+
+.mobile-headline-first-line {
+  padding-top: 30px;
+  text-align: center;
+  font-family: alfa;
+  color: var(--dark-gray);
+  font-size: 24px;
+}
+
+.mobile-headline-second-line {
+  font-family: alfa;
+  font-size: 34px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: var(--blue);
+}
+
+.mobile-category-wrapper {
+  position: relative;
+  width: 100%;
+  height: 220px;     
+  padding: 30px;
+  margin-bottom: 10px;
+  background-size: cover;
+}
+
+.mobile-category-text-wrapper {
+  padding: 10px;
+  position: absolute;
+  background-color: white;
+  opacity: 0.8;
+}
+
+.mobile-category-text-headline {
+  line-height: 24px;
+  font-family: alfa;
+  color: black;
+  font-size: 22px;
+}
+  
+.mobile-category-text-examples {
+  position: relative;
+  font-family: "Miriam Libre", Helvetica;
+  color: var(--gray);
+  font-size: 16px;
+  //letter-spacing: 0.32px;
+  line-height: 22px;
+  //margin-top: 10px;
+}
+
+.mobile-category-link {
+  background-color: var(--blue);
+  padding: 8px 12px 12px 12px;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 30px;
+  right : 30px;
+  font-family: alfa;
+  font-weight: lighter;
+  color: white;
+  font-size: 22px;
+  text-decoration: underline;
+}
+
+#first-category {
+  background-image: url(https://c.animaapp.com/79MIJlGR/img/eddie-carolina-stigson-ecize6mduh8-unsplash-1@2x.png);
+  
+}
+
+#second-category {
+  background-image: url(https://c.animaapp.com/79MIJlGR/img/eddie-carolina-stigson-ecize6mduh8-unsplash-1-1@2x.png);
+}
+
+#third-category {
+  background-image: url(https://c.animaapp.com/79MIJlGR/img/eddie-carolina-stigson-ecize6mduh8-unsplash-1-2@2x.png);
+}
+
+#arguments {
+  background-image: url(../../../../assets/1-3.jpg);
+  background-size:cover;
+}

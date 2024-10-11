@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html dir="rtl">
+  <body>
+    <app-topper></app-topper>
+    <div *ngIf="!isMobile">
+      <div class="desktop-main-wrapper">
+        <div class="desktop-right-sidebar-wrapper">
+        </div>
+      <div class="desktop-main-div-wrapper">
+        <p class="desktop-headline" id="form-headline">עריכת תשובה</p>
+        <p class="desktop-form-explanation-text">
+          • התוכן ייבדק ויתווסף לאתר רק אם יימצא מתאים
+        <br>
+          • יש למלא את כל השדות
+        </p>
+        
+        <p class="desktop-input-text">כותרת</p>
+        <input class="desktop-form-input" [(ngModel)]="argument.title" #titleInput disabled>
+        <p class="desktop-input-text">תשובה קצרה (עד 200 תווים)</p>
+        <textarea class="desktop-form-input" id="desktop-short-input" #short 
+        [(ngModel)]="argument.answers[index].short" maxlength="200"></textarea>
+        <p class="desktop-input-text">תשובה מלאה</p>
+        <textarea class="desktop-form-input" id="desktop-full-input" #full
+        [(ngModel)]="argument.answers[index].full"></textarea>
+        <p class="desktop-input-text">מייל</p>
+        <input class="desktop-form-input" [(ngModel)]="emailInputCheck" #email>
+        
+        <button class="desktop-submit-button"
+        (click)="submitEditedAnswer(short.value, full.value, email.value)">שליחה</button>
+     
+
+
+      </div>
+      <div class="desktop-left-sidebar-wrapper">
+      </div>
+       </div>
+    </div>
+    <app-footer></app-footer>
+  </body>
+</html>
+

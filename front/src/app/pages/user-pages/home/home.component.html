@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html dir="rtl">
+  <body>
+    <app-topper></app-topper>
+    <div *ngIf="!isMobile">
+      <div class="desktop-main-wrapper" [ngStyle]="{'min-height': minimumHeight}">
+        <div class="desktop-homepage-sidebar-wrapper">
+        </div>
+        <div class="desktop-homepage-main-div-wrapper" >
+          <p class="desktop-homepage-headline-first-line">למי שרוצה לעשות סדר בבלגן שנקרא</p>
+          <p class="desktop-homepage-headline-second-line">הסכסוך הישראלי-פלסטיני</p>
+          <div class="desktop-category-wrapper" id="arguments">
+            <div class="desktop-category-text-wrapper">
+              <p class="desktop-category-text-headline">ללמוד מה נכון (ובעיקר מה לא נכון)</p>
+              <p class="desktop-category-text-headline bottom-line">בטיעונים השונים על הסכסוך</p>
+              <p class="desktop-category-text-examples">ואיך (ומה) לענות למי שטוען אותם</p>
+            </div>
+            <a class="desktop-category-link" routerLink="/arguments">לטיעונים ←</a>
+          </div>
+          <div class="desktop-category-wrapper" id="dictionary">
+            <div class="desktop-category-text-wrapper">
+              <p class="desktop-category-text-headline bottom-line">להכיר את מושגי היסוד</p>
+              <p class="desktop-category-text-examples">מה זה שטח C? מה זו החלטה 242?</p>
+            </div>
+            <a class="desktop-category-link" routerLink="/dictionary">למילון המלא ←</a>
+          </div>        
+          <div class="desktop-category-wrapper" id="background">
+            <div class="desktop-category-text-wrapper">
+              <p class="desktop-category-text-headline bottom-line">להבין מה היה עד עכשיו</p>
+              <p class="desktop-category-text-examples">איך ולמה אחרי כמעט 100 שנות סכסוך</p>
+              <p class="desktop-category-text-examples">אנחנו אפילו לא קרובים לסיים אותו?</p>
+            </div>
+            <a class="desktop-category-link" routerLink="/background">לקיצור תולדות הפערים בין הצדדים ←</a>
+          </div>
+          <div class="desktop-category-wrapper" id="today">
+            <div class="desktop-category-text-wrapper">
+              <p class="desktop-category-text-headline bottom-line">ואיפה אנחנו היום</p>
+              <p class="desktop-category-text-examples">כמה אנחנו רחוקים מסיום הסכסוך</p>
+              <p class="desktop-category-text-examples">ומה מונע ממנו להסתיים?</p>
+            </div>
+            <a class="desktop-category-link" routerLink="/today">לפערים כיום ←</a>
+          </div>
+        </div>
+        <div class="desktop-homepage-sidebar-wrapper">
+        </div>
+      </div>
+    </div>
+    <div *ngIf="isMobile">
+      <div class="mobile-headline-first-line">
+        <p>למי שרוצה לעשות סדר בבלגן שנקרא</p>
+      </div>
+      <div class="mobile-headline-second-line">
+        <p>הסכסוך הישראלי-פלסטיני</p>
+      </div>
+      <div class="mobile-category-wrapper" id="arguments">
+        <div class="mobile-category-text-wrapper">
+          <p class="mobile-category-text-headline">ללמוד מה נכון (ובעיקר מה לא נכון)</p>
+          <p class="mobile-category-text-headline bottom-line">בטיעונים השונים על הסכסוך</p>
+          <p class="mobile-category-text-examples">ואיך (ומה) לענות למי שטוען אותם</p>
+        </div>
+        <a class="mobile-category-link" routerLink="/arguments">לטיעונים ←</a>
+      </div>   
+      <div class="mobile-category-wrapper" id="dictionary">
+        <div class="mobile-category-text-wrapper">
+          <p class="mobile-category-text-headline bottom-line">להכיר את מושגי היסוד</p>
+          <p class="mobile-category-text-examples">מה זה שטח C? מה זו החלטה 242?</p>
+        </div>
+        <a class="mobile-category-link" routerLink="/dictionary">למילון המלא ←</a>
+      </div>        
+      <div class="mobile-category-wrapper" id="background">
+        <div class="mobile-category-text-wrapper">
+          <p class="mobile-category-text-headline bottom-line">ללמוד מה היה עד עכשיו</p>
+          <p class="mobile-category-text-examples">איך ולמה אחרי כמעט 100 שנות סכסוך</p>
+          <p class="mobile-category-text-examples">אנחנו אפילו לא קרובים לסיים אותו</p>
+        </div>
+        <a class="mobile-category-link" routerLink="/background">לקיצור תולדות הפערים בין הצדדים ←</a>
+      </div>
+      <div class="mobile-category-wrapper" id="today">
+        <div class="mobile-category-text-wrapper">
+          <p class="mobile-category-text-headline bottom-line">להבין איפה אנחנו היום</p>
+          <p class="mobile-category-text-examples">כמה אנחנו רחוקים מסיום הסכסוך</p>
+          <p class="mobile-category-text-examples">ומה מונע ממנו להסתיים?</p>
+        </div>
+        <a class="mobile-category-link" routerLink="/today">לפערים כיום ←</a>
+      </div>
+    </div>
+    <app-footer></app-footer>
+  </body>
+</html>

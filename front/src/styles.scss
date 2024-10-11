@@ -1,0 +1,350 @@
+
+@import url("https://fonts.googleapis.com/css?family=Miriam+Libre:400|Frank+Ruhl+Libre:500");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+@font-face {
+  font-family: Alfa;
+  src: url(./assets/AlfaBravo-Bold.otf)
+}
+
+::-webkit-scrollbar { 
+  display: none; 
+}
+
+:root {
+  --blue: rgba(17, 95, 164, 1);
+  --red: rgba(164, 17, 17, 1);
+  --dark-gray: rgb(56, 56, 56);
+  --gray: rgba(112, 112, 112, 1);
+  --light-gray: rgba(209, 209, 209, 1);
+  --white-gray: rgb(255, 255, 252, 1);
+
+  --variable-collection-white-100: rgb(255, 255, 252), 1;
+  --variable-collection-gray-700: rgb(56, 56, 56);
+  --variable-collection-gray-500: rgba(112, 112, 112, 1);
+  --variable-collection-gray-300: rgba(209, 209, 209, 1);
+  --variable-collection-red-500: rgba(164, 17, 17, 1);
+  --variable-collection-blue-500: rgba(17, 95, 164, 1);
+}
+
+// DESKTOP >>>
+
+.desktop-main-wrapper {
+  width: 1280px;
+  padding-bottom: 30px;
+  display: flex;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.desktop-main-div-wrapper {
+  min-width: 650px;
+  max-width: 650px;
+}
+
+.desktop-headline {
+  font-family: alfa;
+  color: #383838;
+  font-size: 58px;
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.desktop-argument-title {
+  font-family: alfa;
+  font-size: 44px;
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.desktop-right-sidebar-wrapper {
+  max-width: 200px;
+  min-width: 200px;
+}
+
+.desktop-left-sidebar-wrapper {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+// action buttons >>>
+
+.desktop-action-buttons-wrapper {
+  display: inline-flex;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  gap: 18px;
+}
+
+.desktop-action-button {
+  border-radius: 15px;
+  font-family: Alfa;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.desktop-action-button:hover {
+  text-decoration: none;
+}
+
+// action buttons <<<
+
+// copy & read-more buttons >>>
+
+.copy-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid;
+  border-color: var(--variable-collection-blue-500);
+  margin: 10px 0px 20px 0px;
+  cursor: pointer;
+}
+
+.copy-text {
+ // font-family: "Miriam Libre", Helvetica;
+ // font-size: 14px;
+}
+
+.copy-icon {
+  position: relative;
+  width: 16px;
+  height: 16px;
+}
+
+.desktop-read-more {
+  color: white;
+  font-family: "Miriam Libre", Helvetica;
+  text-decoration: underline;
+  font-weight: lighter;
+  font-size: 15px;
+  margin: auto;
+  margin-right: 0px;
+}
+
+.desktop-answer-link {
+  text-decoration: underline;
+}
+
+.desktop-answer-link:hover {
+  text-decoration: none;
+}
+
+.desktop-read-more:hover {
+  text-decoration: none;
+}
+
+// argument wrapper >>>
+
+.argument-wrapper {
+  justify-content: flex-end;
+  width: fit-content;
+  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 1);
+  margin-bottom: 20px;
+}
+
+.argument:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.argument {
+  font-family: Alfa;
+
+  padding: 10px;
+  font-size: 24px;
+  text-decoration: underline;    
+}
+
+a {
+  display:inline-block;
+}
+
+// argument wrapper <<<
+
+//
+
+.subtitle {
+  font-family: "Miriam Libre", Helvetica;
+  color: var(--variable-collection-gray-700);
+  font-size: 20px;
+  line-height: 32px;
+}
+
+// MOBILE >>>
+
+.mobile-main-wrapper {
+//  margin-right: 40px;  
+//  margin-left: 40px;
+  margin: auto;
+  //width: 86%;
+  width: calc(100% - 80px);
+}
+
+.mobile-wrapper {
+ // margin: auto;
+  //width: 86%;
+ // width: calc(100% - 40px);
+
+ // margin-bottom: 5px;
+}
+
+
+  
+.mobile-divider {
+  margin: auto;
+  //width: 86%;
+  height: 1px;
+  background-color: #383838;
+}
+
+.mobile-title {
+  padding-top: 10px;
+  font-family: Alfa;
+  color: #000000;
+  font-size: 24px;
+}
+
+.mobile-subtitle {
+  font-family: "Miriam Libre", Helvetica;
+  color: #828282;
+  font-size: 12px;
+}
+
+.mobile-argument-title, .mobile-headline {    
+  //margin-top: 16px;
+  font-family: Alfa;    
+  //font-size: 42px;
+  margin-bottom: 16px;
+  font-weight: 100;
+  padding-top: 30px;
+  margin-bottom: 40px;
+}
+
+
+// FROM "TOPPER" <<<
+
+
+
+// from ARGUMENTS >>>
+
+
+// GENERAL
+
+
+
+// MAIN-DIV
+
+.desktop-headline {
+  font-family: alfa;
+  color: #383838;
+  //font-size: 60px;
+  text-align: right;
+}
+
+
+  
+.guideline-headline {
+  font-family: Alfa;
+  color: var(--variable-collection-gray-700);
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: 36px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+   
+// arguments types buttons >>>
+
+a {
+  text-decoration: none;
+}
+.underline-hover:hover {
+  text-decoration: underline;
+}
+
+// arguments types buttons <<<
+
+// quotes >>>
+
+.quote {
+  width: 550px;
+  font-family: "Frank Ruhl Libre", Helvetica;
+  color: var(--variable-collection-gray-700);
+  font-size: 20px;
+  line-height: 33.6px;
+}
+
+.quote-source {
+  font-family: Alfa;
+  font-weight: 700;
+  color: var(--variable-collection-gray-700);
+  font-size: 22px;
+  margin-right: 26px;
+  letter-spacing: 0;
+  line-height: 36px;
+  margin-top: 10px;
+}
+
+.quote-source-description {
+  margin-right: 26px;
+  font-family: "Miriam Libre", Helvetica;
+  margin-bottom: 20px;
+}
+
+.quote-decoration {
+  padding: 0px 20px 0px 0px;
+  border-right-width: 4.17px;
+  border-right-style: solid;
+  border-color: var(--variable-collection-blue-500);
+}
+
+// quotes <<<
+
+// MAIN-DIV <<<
+
+// LEFT-SIDEBAR >>>
+
+.desktop-left-sidebar-wrapper img {
+  object-fit: contain;
+  width: 100%;
+}
+
+.image-credit {
+  font-family: var(--credit-font-family);
+  font-weight: var(--credit-font-weight);
+  color: var(--variable-collection-gray-500);
+  font-size: var(--credit-font-size);
+  text-align: center;
+  letter-spacing: var(--credit-letter-spacing);
+  line-height: var(--credit-line-height);
+  white-space: nowrap;
+  font-style: var(--credit-font-style);
+}
+
+// FROM ARGUMENTS <<<
+
+
+
+// ARGUMENTS TYPES PAGES >>>
+
+
+
+// ARGUMENTS TYPES PAGES <<<\
+
+
+.mobile-quote-source-description {
+  line-height: 22px;
+}
+
+.mobile-action-button {
+  margin-bottom: 20px;
+}
+
+hr {
+  border: 0;
+  //border-top: 3px solid white;
+
+}

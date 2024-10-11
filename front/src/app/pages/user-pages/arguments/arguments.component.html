@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html dir="rtl">
+  <body>
+    <app-topper></app-topper>
+    <div *ngIf="!isMobile">
+      <div class="desktop-main-wrapper" [ngStyle]="{'min-height': minimumHeight}">
+        <div class="desktop-right-sidebar-wrapper">
+        </div>
+        <div class="desktop-main-div-wrapper">
+          <p class="desktop-headline">טיעונים</p>
+          <div class="arguments-types-wrapper">
+            <a routerLink="/false-arguments">
+              <p class="arguments-type underline-hover false" (click)="setType('false')">שקריים</p>
+            </a>
+            <a routerLink="/true-arguments">
+              <p class="arguments-type underline-hover true" (click)="setType('true')">אמיתיים</p>
+            </a>
+            <a routerLink="/irrefutable-arguments">
+              <p class="arguments-type underline-hover irrefutable" (click)="setType('irrefutable')">בלתי ניתנים להפרכה</p>
+            </a>
+          </div>
+          <p class="subtitle">
+            ישנן אינספור דרכים להתייחס לטיעונים שקשורים לסכסוך הישראלי-פלסטיני. 
+          </p>
+          <p class="subtitle">
+            הקו המנחה של ״תכלס״ הוא להתמקד במה שחשוב:
+          </p>
+          <p class="guideline-headline">לא בעבר / כן בעתיד</p>
+          <div class="quote-decoration">
+            <p class="quote">
+              ״אם היה לי איזשהו תפקיד בשיחות השלום, הייתי רוצה את תפקיד טכנאי הסאונד בשיחות. והייתי נותן הוראה לנתק את
+              המיקרופונים בכל פעם שאחד המשתתפים מתייחס לעבר, ולחבר אותם מחדש רק כשהם חוזרים לדבר על ההווה או העתיד.״
+            </p>
+          </div>
+          <p class="quote-source">עמוס עוז</p>
+          <p class="quote-source-description">חתן פרס ישראל לספרות</p>
+          <p class="guideline-headline">לא במי צודק / כן בחתירה לפתרונות מעשיים וריאליים</p>
+          <div class="quote-decoration">
+            <p class="quote">
+              ״זו הארץ שלנו, הם לא מכירים בזה שהארץ שלנו, והם נלחמים בנו. כאשר את המשפט הזה, כמובן, אומרים שני
+               הצדדים.״
+            </p>
+          </div>
+          <p class="quote-source">פרופ׳ הלל כהן</p>
+          <p class="quote-source-description desktop-last-description">החוג ללימודי איסלאם והמזרח התיכון באוניברסיטה העברית</p>
+          <div class="argument-wrapper" *ngFor="let argument of arguments; index as i">
+            <a class="argument" [routerLink]="['../','arguments',argument._id]" [ngStyle]="{'background-color': argumentBackground[i]}" 
+            >״{{argument.title}}״</a>
+          </div>
+          <div class="desktop-action-buttons-wrapper">
+            <a class="desktop-action-button" routerLink="/new">הוספת טיעון</a>
+          </div>
+        </div>
+        <div class="desktop-left-sidebar-wrapper">
+          <img class="image"
+            src="../../../../assets/arguments-1.png"/>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="isMobile">
+      <div class="mobile-main-wrapper" >
+        <p class="mobile-argument-title">טיעונים</p>
+        <button class="false" routerLink="/false-arguments" (click)="setType('false')">שקריים</button>
+        <button class="true" routerLink="/true-arguments" (click)="setType('true')">אמיתיים</button>
+        <button class="irrefutable bottom-button" routerLink="/irrefutable-arguments" 
+        (click)="setType('irrefutable')">בלתי ניתנים להפרכה</button>
+        <div class="short-answer-wrapper">
+          <p class="mobile-short-answer">
+            ישנן אינספור דרכים להתייחס לטיעונים שקשורים לסכסוך הישראלי-פלסטיני. 
+          </p>
+          <p class="mobile-short-answer">
+          הקו המנחה של ״תכלס״ הוא להתמקד במה שחשוב:
+          </p>
+        </div>
+        <p class="guideline-headline">לא בעבר / כן בעתיד</p>
+        <div class="quote-decoration">
+          <p class="mobile-quote">
+            ״אם היה לי איזשהו תפקיד בשיחות השלום, הייתי רוצה את תפקיד טכנאי הסאונד בשיחות. והייתי נותן הוראה לנתק את
+            המיקרופונים בכל פעם שאחד המשתתפים מתייחס לעבר, ולחבר אותם מחדש רק כשהם חוזרים לדבר על ההווה או העתיד.״
+          </p>
+        </div>
+        <p class="quote-source">עמוס עוז</p>
+        <p class="quote-source-description quote-source-description-bottom-line">חתן פרס ישראל לספרות</p>
+        <p class="guideline-headline">לא במי צודק / כן בחתירה לפתרונות מעשיים וריאליים</p>
+        <div class="quote-decoration">
+          <p class="mobile-quote">
+            ״זו הארץ שלנו, הם לא מכירים בזה שהארץ שלנו, והם נלחמים בנו. כאשר את המשפט הזה, כמובן, אומרים שני
+            הצדדים.״
+          </p>
+        </div>
+        <p class="quote-source">פרופ׳ הלל כהן</p>
+        <p class="quote-source-description">החוג ללימודי איסלאם והמזרח התיכון,</p>
+        <p class="quote-source-description desktop-last-description">האוניברסיטה העברית</p>
+        <div class="argument-wrapper" *ngFor="let argument of arguments; index as i">
+          <a class="argument" [routerLink]="['../','arguments',argument._id]" [ngStyle]="{'background-color': argumentBackground[i]}" 
+          >״{{argument.title}}״</a>
+        </div>
+        <div class="desktop-action-buttons-wrapper">
+          <a class="desktop-action-button mobile-action-button" routerLink="/new">הוספת טיעון</a>
+        </div>
+      </div>
+    </div>
+    <app-footer></app-footer>
+  </body>
+</html>

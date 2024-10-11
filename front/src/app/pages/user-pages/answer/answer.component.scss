@@ -1,0 +1,150 @@
+// MOBILE & DESKTOP
+
+.read-more, .mobile-read-more {
+  margin: auto;
+  margin-right: 0px;
+}
+
+// DESKTOP >>>
+
+.answer-full {
+  font-size: 16px;
+  font-family: "Miriam Libre", Helvetica;
+  line-height: 30px;
+  margin-bottom: 50px;
+}
+
+.answer-title {
+  font-size: 32px;
+  font-family: Alfa;
+  margin-bottom: 32px;
+}
+
+.copy-icon {
+  position: relative;
+  width: 16px;
+  height: 16px;
+}
+
+.desktop-answer-subtitle {
+  font-family: Alfa;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.read-more {
+  margin: auto;
+  font-family: "Miriam Libre", Helvetica;
+  color: white;
+  text-decoration: underline;
+  font-weight: lighter;
+}
+
+.desktop-sources-wrapper {
+  margin-bottom: 50px;
+}
+
+a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+.read-copy-wrapper {
+  border: 1px solid white;
+  margin: 0px auto;
+}
+
+.copy-main-wrapper {
+  float: left;
+}
+  
+.read-more-wrapper {
+  float: right;
+}	
+
+.desktop-source-wrapper {
+  display: flex; 
+}
+
+.copy-wrapperrr {
+  display: inline-flex;
+  gap: 4px;
+  padding: 4px 0px 4px 15px;
+  border-radius: 4px;
+  //border: 1px solid;
+  //border-color: red;
+  text-align: left;
+}
+
+.desktop-sources-headline {
+  font-family: Alfa;
+  //color: white;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.answeffr-box {
+  margin-bottom: 70px;
+}
+
+
+a:hover {
+  text-decoration: none;
+}
+
+
+
+
+.desktop-textual-source {
+  margin: auto;
+  margin-right: 0px;
+  font-family: "Miriam Libre", Helvetica;
+  font-size: 15px;
+}
+
+hr {
+    border: 0;
+    //border-top: 3px solid white;
+
+}
+
+
+// MOBILE >>>
+   
+.mobile-argument-title {
+  padding-top: 20px;
+  font-size: 26px;
+
+}
+
+.mobile-read-copy-wrapper {
+  display:flex; 
+}
+
+.mobile-read-more {
+  color: white;
+  font-family: "Miriam Libre", Helvetica;
+  text-decoration: underline;
+  font-weight: lighter;
+  font-size: 15px;
+}
+
+.mobile-read-copy-wrapper {
+  display:flex; 
+}
+
+.answer-full-mobile {
+ // font-size: 15px;
+}
+
+.mobile-answer-full {
+  font-size: 14px;
+  font-family: "Miriam Libre", Helvetica;
+  line-height: 22px;
+  margin-bottom: 50px;
+}
+
+// MOBILE <<<

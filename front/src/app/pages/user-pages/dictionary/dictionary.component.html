@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html dir="rtl">
+  <body>
+    <app-topper></app-topper>
+    <div *ngIf="!isMobile">
+      <div class="desktop-main-wrapper" [ngStyle]="{'min-height': minimumHeight}">
+        <div class="desktop-right-sidebar-wrapper">
+        </div>
+        <div class="desktop-main-div-wrapper">
+          <p class="desktop-headline">מילון</p>
+          <p class="subtitle">תיאור קצר של המילון...</p>
+          <div class="dictionary-wrapper">
+            <div class="letter-wrapper" *ngFor="let letter of letters; index as i">
+              <p class="letter">{{letter}}</p>
+              <div class="letter-values-wrapper">
+                <div *ngFor="let term of termsInLetters[i]; index as j">
+                  <p class="value" (click)="toggle(i,j)">{{term.title}}</p>
+                  <section class="term-definition" [@dropdown]="termDefinitionStatus[i][j]">
+                    <p class="mmm">{{term.definition}}</p>
+                    <div class="copy-wrapper" (click)="copy(i,j)">
+                      <p class="copy-text">העתק</p>
+                      <img class="copy-icon" src="https://c.animaapp.com/rrTUmu4q/img/icons-2.svg" />
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>   
+          </div>
+          <div class="desktop-dictionary-sources-wrapper"> 
+            <p class="desktop-answer-subtitle">מקורות</p>  
+            <div class="desktop-source-wrapper">
+              <div class="copy-wrapperrr">
+                <img class="copy-icon" src="./../../../../assets/book-black.svg" />
+              </div>
+              <p class="desktop-textual-source" [ngStyle]="{'color': blackWhite}">ספר כלשהו</p>            
+            </div>
+            <div class="desktop-source-wrapper">
+              <div class="copy-wrapperrr">
+                
+                <img class="copy-icon" src="./../../../../assets/link-black.svg" />
+                
+              </div>
+              <a class="mobile-read-more" target="_blank" href="https://peacenow.org.il/%D7%A9%D7%9C%D7%95%D7%9D-%D7%A2%D7%9B%D7%A9%D7%99%D7%95-%D7%97%D7%95%D7%A9%D7%A4%D7%AA-%D7%90%D7%AA-%D7%94%D7%A7%D7%9C%D7%A4%D7%99%D7%9D"
+              [ngStyle]="{'color': blackWhite}">קלפים עכשיו</a>            
+            </div>
+            </div>
+        </div>
+        <div class="desktop-left-sidebar-wrapper">
+        </div>
+      </div>
+    </div>
+    <div *ngIf="isMobile">
+      <div class="mobile-main-wrapper">
+          <p class="mobile-headline">מילון</p>
+      
+          <p class="subtitle">תיאור קצר של המילון...</p>
+          
+          
+          <div class="mobile-dictionary-wrapper">
+            
+            <div class="mobile-letter-wrapper" *ngFor="let letter of letters; index as i">
+              <p class="letter">{{letter}}</p>
+              
+              
+              <div class="letter-values-wrapper">
+                <div *ngFor="let term of termsInLetters[i]; index as j">
+                  <p class="value" (click)="toggle(i,j)">{{term.title}}</p>
+                
+                  
+                  <section class="term-definition" [@dropdown]="termDefinitionStatus[i][j]">
+                    <p class="mmm">{{term.definition}}</p>
+                    <p class="mmm">{{term.definition}}</p>
+                    
+      <!--
+                    <div class="copy-wrapper" (click)="copy(i,j)">
+      
+                      <p class="copy-text">העתק</p>
+                      <img class="copy-icon" src="https://c.animaapp.com/rrTUmu4q/img/icons-2.svg" />
+                      
+                    </div>
+          
+          <p class="copy-text">העתק</p>
+          -->         
+          <img class="copy-icon" src="https://c.animaapp.com/rrTUmu4q/img/icons-2.svg" />             
+                  </section>
+                
+                </div>
+              </div>
+          </div>
+        
+        </div>
+        <p>akjshdkajshdkajshd</p>
+      </div>
+    </div>
+    <app-footer></app-footer>
+  </body>
+</html>

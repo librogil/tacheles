@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html dir="rtl">
+  <body>
+    <app-topper></app-topper>
+    <div *ngIf="!isMobile">
+      <div class="desktop-main-wrapper" [ngStyle]="{'min-height': minimumHeight}">
+        <div class="desktop-right-sidebar-wrapper">
+        </div>
+      <div class="desktop-main-div-wrapper">
+        <p class="desktop-headline">רקע</p>
+
+          <div class="quote-decoration">
+            <p class="quote">
+              ״מקור המבוכה, הבלבול והפשטנות – אצלנו ובכל העולם – הוא בכך שמתנהלות כאן שתי מלחמות בעת ובעונה אחת.
+              <br>
+              הפלסטינים, מצד אחד, נאבקים על סיום הכיבוש ועל זכותם הצודקת לעצמאות לאומית, על זכותם ״להיות עם חופשי בארצם״. מצד שני, רבים מן הפלסטינים נלחמים את מלחמתו של האסלאם הפנאטי, מלחמה על שאיפתם הפנאטית לחסל את מדינת ישראל כמדינת העם היהודי ומדינת כל אזרחיה.
+              <br>
+              אפילו אנשים הגונים, שוחרי שלום וצדק, בישראל ובעולם כולו נופלים בפח: או שהם מגינים בלהט על המשך הכיבוש הישראלי בשטחים בטענה שישראל היא קורבן לג'יהאד ושהכיבוש הוא אקט של הגנה עצמית, או שהם מחרפים ומגדפים את ישראל בטענה שהכיבוש, ורק הכיבוש, הוא מקור הרע, ועל כן הפלסטינאים זכאים לשפוך את דמם של הישראלים בלי שום מגבלה.
+              <br>
+              כמעט אותם דברים עצמם אפשר לומר על מדינת ישראל: גם היא נלחמת שתי מלחמות בעת ובעונה אחת: מלחמת צודקת מאין כמותה על זכותו של העם היהודי להיות עם חופשי בארצו, והשנייה היא מלחמת דיכוי, עוול ועושק שמטרתה להוסיף לדירתנו עוד שניים-שלושה חדרים על חשבון השכן הפלסטיני, לגזול את אדמותיו ולמנוע ממנו את זכותו לחירות.״
+            </p>
+          </div>
+          <p class="quote-source">עמוס עוז</p>
+          <p class="quote-source-description">
+            מתוך ספרו ״שלום לקנאים״
+          </p>
+
+      </div>
+      <div class="desktop-left-sidebar-wrapper">
+      </div>
+       </div>
+    </div>
+    <div *ngIf="isMobile">
+      <div class="mobile-headline-first-line">
+        <p>למי שרוצה לעשות סדר בבלגן שנקרא</p>
+      </div>
+      <div class="mobile-headline-second-line">
+        <p>הסכסוך הישראלי-פלסטיני</p>
+      </div>
+      <div class="mobile-category-wrapper" id="first-category">
+        <div class="mobile-category-text-wrapper">
+          <p class="mobile-category-text-headline">להכיר את מושגי היסוד</p>
+          <p class="mobile-category-text-examples">מה זה שטח C? מה זו החלטה 242?</p>
+        </div>
+        <div class="mobile-category-link">למילון ←</div>
+      </div>        
+      <div class="mobile-category-wrapper" id="second-category">
+        <div class="mobile-category-text-wrapper">
+          <p class="mobile-category-text-headline">לחשוף את השקרים מאחורי</p>
+          <p class="mobile-category-text-headline">המיתוסים של הסכסוך</p>
+          <p class="mobile-category-text-examples">האם באמת אין פרטנר? <br />האם באמת ברק הציע הכל?</p>
+        </div>
+        <div class="mobile-category-link">לטיעונים ←</div>
+      </div>
+      <div class="mobile-category-wrapper" id="third-category">
+        <div class="mobile-category-text-wrapper">
+          <p class="mobile-category-text-headline">להבין איפה אנחנו היום</p>
+          <p class="mobile-category-text-examples">כמה אנחנו רחוקים מהסכם, <br>ומה (או מי) מונע מהסכם להתממש?</p>
+        </div>
+        <div class="mobile-category-link">לקיצור תולדות הסכסוך ←</div>
+      </div>
+    </div>
+  <app-footer></app-footer>
+  </body>
+</html>

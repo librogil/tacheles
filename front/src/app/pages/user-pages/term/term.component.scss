@@ -1,0 +1,38 @@
+.answer-box {
+  padding: 10px 50px 30px 50px;
+  text-align: justify;
+  white-space: pre-line;
+}
+
+.answer-box-mobile {
+  margin-top: 10px;
+  padding: 5px 3% 5px 3%;
+}
+
+.answer-full {
+  font-size: 18px;
+  font-family: "Miriam Libre", Helvetica;
+  line-height: 30px;
+}
+
+.answer-full-mobile {
+  font-size: 15px;
+}
+
+.answer-title {
+  font-size: 32px;
+  font-family: Alfa;
+  margin-bottom: 32px;
+}
+
+.link {
+  color: black;
+}
+
+a {
+  color: rgb(124, 177, 195);
+}
+
+.answer-full a:hover {
+  text-decoration: underline;
+}
